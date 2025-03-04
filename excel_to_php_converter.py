@@ -74,11 +74,15 @@ def process_file(sheet, key_column: str, value_column: str) -> None:
 
         if value.startswith("'") and value.endswith("',"):
             value = value[1:-2]
-        elif value.startswith("'") and value.endswith("'"):
+        if value.startswith("'") and value.endswith("'"):
             value = value[1:-1]
-        elif value.endswith("',"):
+        if value.endswith("',"):
             value = value[:-2]
-        elif value.endswith(","):
+        if value.startswith("*'"):
+            value = value[2:]
+        if value.startswith("'"):
+            value = value[1:]
+        if value.endswith(","):
             value = value[:-1]
 
         value = value.replace("'", "\\'")
