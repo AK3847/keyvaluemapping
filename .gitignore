@@ -11,6 +11,7 @@ wheels/
 
 # output folder
 output/
+reports/
 
 # test file
 raw.xlsx
