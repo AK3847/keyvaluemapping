@@ -2,24 +2,24 @@
 
 - git clone this repo:
 ```bash
-    git clone https://github.com/AK3847/keyvaluemapping.git
-    cd keyvaluemapping
+git clone https://github.com/AK3847/keyvaluemapping.git
+cd keyvaluemapping
 ```
 
 - setup a virtual environment for python and activate it (optional):
 ```bash
-    python -m venv .venv
-    .venv\Scripts\activate
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
 - install requirements:
 ```bash
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 - run the `excel_to_php_converter.py` using:
 ```bash
-    python excel_to_php_converter.py
+python excel_to_php_converter.py
 ```
 
 - Give your input file name (excel file)
